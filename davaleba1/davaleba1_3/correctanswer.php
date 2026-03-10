@@ -26,7 +26,6 @@ h1 {
 <?php
 $correct_answers=0;
 
-// აქ ჩადეთ თქვენი შემოწმების კოდი
 if($_POST['q1'] == "b") $correct_answers++;
 if($_POST['q2'] == "a") $correct_answers++;
 if($_POST['q3'] == "d") $correct_answers++;
