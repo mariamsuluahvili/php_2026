@@ -34,6 +34,7 @@ for($i=0;$i<4;$i++){
    <div>
     <h2>მთლიანი მატრიცა:</h2>
     <table class="matrica">
+        <tr>
         <?php  for ($i=0; $i<4; $i++){
             for($j=0;$j<4;$j++){
 ?>
@@ -46,16 +47,19 @@ for($i=0;$i<4;$i++){
         </table>
     <h2>მატრიცის დიაგონალის ზემოთ მდგომი რიცხვებო:</h2>
     <table>
-          <?php  for ($i=0; $i<4; $i++){
-            for($j=0;$j<4;$j++){
+        <tr>
+          <?php  for ($i=0; $i<4; $i++){ 
+            for($j=0;$j<4;$j++){ 
                 if($i<$j){
 ?>
                 <td><?= $masivi[$i][$j] ?></td>
 
+
                 <?php } ?>
-</tr>
- <?php } ?>
+         
+ <?php } ?>]
   <?php } ?>
+   </tr> 
 </table>
     </div>
     <br>
