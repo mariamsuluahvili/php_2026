@@ -33,7 +33,6 @@ if (isset($_POST['submit_click'])) {
     $a = $_POST['a'];
     $b = $_POST['b'];
 
-    // ვალიდაცია
     if (!is_numeric($M) || !is_numeric($N) || !is_numeric($a) || !is_numeric($b)) {
         ?>
         <p style="color:red;">ყველა ველი უნდა იყოს რიცხვი!</p>
@@ -48,7 +47,6 @@ if (isset($_POST['submit_click'])) {
         <?php
     } else {
 
-        // მატრიცის შექმნა და ელემენტების მინიჭება
         $matrix = array();
         for ($i = 0; $i < $M; $i++) {
             $matrix[$i] = array();
@@ -57,7 +55,7 @@ if (isset($_POST['submit_click'])) {
             }
         }
 
-        // სვეტების ჯამი
+
         $colSums = array();
         for ($j = 0; $j < $N; $j++) {
             $colSums[$j] = 0;
@@ -66,7 +64,7 @@ if (isset($_POST['submit_click'])) {
 
         <table>
             <?php
-            // სტრიქონების ჯამი და გამოტანა
+        
             for ($i = 0; $i < $M; $i++) {
                 ?>
                 <tr>
@@ -84,13 +82,13 @@ if (isset($_POST['submit_click'])) {
                     <?php
                 }
                 ?>
-                <td><strong><?php print $rowSum; ?></strong></td> <!-- სტრიქონის ჯამი -->
+                <td><strong><?php print $rowSum; ?></strong></td> 
                 </tr>
                 <?php
             }
             ?>
 
-            <!-- სვეტების ჯამი ქვემოთ -->
+           
             <tr>
             <?php
             for ($j = 0; $j < $N; $j++) {
@@ -99,7 +97,7 @@ if (isset($_POST['submit_click'])) {
                 <?php
             }
             ?>
-            <td></td> <!-- ქვედა მარჯვენა კუთხე ცარიელი -->
+            <td></td> 
             </tr>
         </table>
 
