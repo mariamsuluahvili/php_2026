@@ -1,0 +1,112 @@
+ფაილი: data.txt
+შიგთავსი:
+file is created
+----------------------
+
+ფაილი: file.txt
+შიგთავსი:
+es paili sheikmna
+----------------------
+
+ფაილი: log.txt
+შიგთავსი:
+29.03.26 01:39:35 - user visited29.03.26 01:39:55 - user visited29.03.26 01:40:31 - user visited29.03.26 01:41:23 - user visited29.03.26 01:41:35 - user visited29.03.26 01:43:33 - user visited
+29.03.26 13:46:13 - user visited
+29.03.26 13:46:16 - user visited
+29.03.26 13:46:43 - user visited
+29.03.26 13:47:01 - user visited
+29.03.26 13:47:04 - user visited
+29.03.26 13:47:06 - user visited
+29.03.26 13:47:28 - user visited
+29.03.26 13:48:43 - user visited
+29.03.26 13:50:23 - user visited
+29.03.26 13:50:41 - user visited
+29.03.26 13:50:41 - user visited
+29.03.26 13:50:42 - user visited
+29.03.26 13:50:42 - user visited
+29.03.26 13:50:42 - user visited
+29.03.26 13:50:42 - user visited
+
+----------------------
+
+ფაილი: marikoinfo.txt
+შიგთავსი:
+
+----------------------
+
+ფაილი: numbers.txt
+შიგთავსი:
+13
+60
+7
+5
+26
+50
+48
+88
+97
+100
+
+----------------------
+
+ფაილი: summary.txt
+შიგთავსი:
+ფაილი: data.txt
+შიგთავსი:
+file is created
+----------------------
+
+ფაილი: file.txt
+შიგთავსი:
+es paili sheikmna
+----------------------
+
+ფაილი: log.txt
+შიგთავსი:
+29.03.26 01:39:35 - user visited29.03.26 01:39:55 - user visited29.03.26 01:40:31 - user visited29.03.26 01:41:23 - user visited29.03.26 01:41:35 - user visited29.03.26 01:43:33 - user visited
+29.03.26 13:46:13 - user visited
+29.03.26 13:46:16 - user visited
+29.03.26 13:46:43 - user visited
+29.03.26 13:47:01 - user visited
+29.03.26 13:47:04 - user visited
+29.03.26 13:47:06 - user visited
+29.03.26 13:47:28 - user visited
+29.03.26 13:48:43 - user visited
+29.03.26 13:50:23 - user visited
+29.03.26 13:50:41 - user visited
+29.03.26 13:50:41 - user visited
+29.03.26 13:50:42 - user visited
+29.03.26 13:50:42 - user visited
+29.03.26 13:50:42 - user visited
+29.03.26 13:50:42 - user visited
+
+----------------------
+
+ფაილი: marikoinfo.txt
+შიგთავსი:
+
+----------------------
+
+ფაილი: numbers.txt
+შიგთავსი:
+13
+60
+7
+5
+26
+50
+48
+88
+97
+100
+
+----------------------
+
+
+----------------------
+
+ფაილი: test.txt
+შიგთავსი:
+hello world
+----------------------
+
