@@ -1,15 +1,9 @@
 <?php
     if(isset($_POST['send_button'])){
-        echo "<h3>Test</h3>";
-        echo "<pre>";
-        print_r($_FILES['file']);
-        echo "</pre>";
-        echo "<pre>";
-        print_r(pathinfo($_FILES['file']['name']));
-        echo "</pre>";
+       
         $size = 1024 * 1024 * 10;
         $extension = pathinfo($_FILES['file']['name'])['extension'];
-        if( ($extension == 'pptx' || $extension == 'txt') && $size <= $_FILES['size']){
+        if( ($extension == 'pptx' || $extension == 'txt') && $_FILES['file']['size'] <= $size){
             move_uploaded_file($_FILES['file']['tmp_name'], "files/".$_FILES['file']['name']);
         }
     }
