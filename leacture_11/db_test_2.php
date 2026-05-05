@@ -1,5 +1,5 @@
 <?php
-    $connect = mysqli_connect("localhost", "root", "", "blog_2026_1");
+    $connect = mysqli_connect("localhost", "root", "", "blog");
     
     $select_roles_query = "SELECT * FROM roles";
 
@@ -43,9 +43,7 @@
         $select_role_by_id = "SELECT * FROM roles WHERE id = $id";
         $result_role_by_id  = mysqli_query($connect, $select_role_by_id);
         $row_role_by_id = mysqli_fetch_assoc($result_role_by_id);
-        echo "<pre>";
-        print_r($row_role_by_id);
-        echo "</pre>";
+        
 ?>
 <form method="post">
     <h3>Update Form</h3>

@@ -9,8 +9,7 @@ $data = mysqli_fetch_all($result);
 if(isset($_POST['name']) && !empty($_POST['name'])){
     $name = $_POST['name'];
 
-    $insert_query = "INSERT INTO categories (name) 
-                     VALUES ('$name')";
+    $insert_query = "INSERT INTO categories (name) VALUES ('$name')";
     mysqli_query($connect, $insert_query);
 
     header("location: categories.php");

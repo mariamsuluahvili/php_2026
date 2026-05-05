@@ -1,22 +1,15 @@
 <?php
     $connect = mysqli_connect("localhost", "root", "", "blog");
-    // echo "<pre>";
-    // print_r($connect);
-    // echo "</pre>";
+
 
     $select_roles_query = "SELECT * FROM roles";
 
     $roles_result = mysqli_query($connect, $select_roles_query);
 
-    // echo "<pre>";
-    // print_r($query);
-    // echo "</pre>";
+   
 
     $data_of_roles_result = mysqli_fetch_all($roles_result);
     
-    // echo "<pre>";
-    // print_r($data_of_roles_result);
-    // echo "</pre>";
 
     if(isset($_POST['role']) && !empty($_POST['role'])){
         $_role = $_POST['role'];

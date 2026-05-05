@@ -1,18 +1,18 @@
 <?php
 $connect = mysqli_connect("localhost", "root", "", "blog");
 
-// users dropdown
+
 $users = mysqli_query($connect, "SELECT * FROM users");
 
-// categories dropdown
+
 $categories = mysqli_query($connect, "SELECT * FROM categories");
 
-// posts data
+
 $select_query = "SELECT * FROM posts";
 $result = mysqli_query($connect, $select_query);
 $data = mysqli_fetch_all($result);
 
-// INSERT
+
 if(isset($_POST['title']) && !empty($_POST['title'])){
     $title = $_POST['title'];
     $content = $_POST['content'];
