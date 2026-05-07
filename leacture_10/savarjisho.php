@@ -27,8 +27,8 @@ if(isset($_GET['delete'])){
    
 }
 
-if(isset($_GET['edit'])){
-    $id = $_GET['edit'];
+if(isset($_GET['id'])){
+    $id = $_GET['id'];
 
     if(isset($_POST['edit']) && !empty($_POST['edit_role'])){
         $role = $_POST['edit_role'];
@@ -72,8 +72,6 @@ td,th{
 </form>
 <?php } ?>
 
-<hr>
-
 
 <form method="POST">
     role:
@@ -81,7 +79,7 @@ td,th{
     <button name="add">add role</button>
 </form>
 
-<hr>
+
 
 
 <table>
@@ -103,7 +101,7 @@ td,th{
     <td><?= $row[3] ?></td>
     <td><?= $row[4] ?></td>
 
-    <td><a href="?edit=<?= $row[0] ?>">edit</a></td>
+    <td><a href="?id=<?= $row[0] ?>">edit</a></td>
     <td><a href="?delete=<?= $row[0] ?>">delete</a></td>
 </tr>
 <?php } ?>

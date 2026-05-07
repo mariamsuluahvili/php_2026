@@ -4,7 +4,7 @@ $connect = mysqli_connect("localhost", "root", "", "university");
 
 $lecturers_query = "SELECT * FROM lecturers";
 $lecturers_result = mysqli_query($connect, $lecturers_query);
-
+$fetchassoc=mysqli_fetch_assoc($lecturers_result);
 
 $select = "SELECT * FROM courses";
 $query = mysqli_query($connect, $select);
@@ -47,9 +47,9 @@ if(isset($_POST['chamateba']) && !empty($_POST['title']) && !empty($_POST['credi
     lecturer id 
     <select name="lecturer_id">
     
-        <?php while($titoeuli = mysqli_fetch_assoc($lecturers_result)) { ?>
-            <option value="<?= $titoeuli['id'] ?>">
-                <?= $titoeuli['name'] ?>
+        <?php while($fetchassoc) { ?>
+            <option value="<?= $fetchassoc['id'] ?>">
+                <?= $fetchassoc['name'] ?>
             </option>
         <?php } ?>
     </select>
